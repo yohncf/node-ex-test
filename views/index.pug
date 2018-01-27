@@ -1,0 +1,70 @@
+extends layout
+
+block variables
+    -var jumbo = true;
+
+block content
+    // Content 1st Section
+    .container
+        .card-deck
+            .col.box.m-4.card.bg-light
+                span.oi.oi-phone.icon(title="phone" aria-hidden="true")
+                .card-body.justify-content-center
+                    h5.card-title Mobile App Development
+                    p.card-text
+                        | "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        | ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .col.box.m-4.card.bg-light
+                span.oi.oi-magnifying-glass.icon(title="magnifying-glass" aria-hidden="true")
+                .card-body.justify-content-center
+                    h5.card-title Media Production
+                    p.card-text
+                        | "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        | ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .col.box.m-4.card.bg-light
+                span.oi.oi-musical-note.icon(title="musical-note" aria-hidden="true")
+                .card-body
+                    h5.card-title E-Marketing
+                    p.card-text
+                        | "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        | ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    // Content 2nd Section
+    .container-fluid.section-2
+        .container.p-5
+            h1.display-3 Some Title for this section
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                | ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    br
+    // Content 3rd Section
+    .container
+        .row
+            .col-6
+                img.mw-100(src="static/img/hightech.jpg")
+            .col
+                h1 A Title for this section
+                p A small paragraph for this other section
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    | incididunt ut labore et dolore magna aliqua.
+                ul.list-group
+                    li.list-group-item.list-group-item-action
+                        span.oi.oi-person(title="person" aria-hidden="true")
+                        |  Vestibulum quis molestie neque
+                    li.list-group-item.list-group-item-action.active
+                        span.oi.oi-pencil(title="pencil" aria-hidden="true")
+                        |  Vestibulum quis molestie neque
+                    li.list-group-item.list-group-item-action
+                        span.oi.oi-project(title="project" aria-hidden="true")
+                        |  Vestibulum quis molestie neque
+                    li.list-group-item.list-group-item-action.disabled
+                        span.oi.oi-copywriting(title="copywriting" aria-hidden="true")
+                        |  Vestibulum quis molestie neque
+                    li.list-group-item.list-group-item-action
+                        span.oi.oi-script(title="script  " aria-hidden="true")
+                        |  Vestibulum quis molestie neque
+    br

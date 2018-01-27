@@ -1,0 +1,51 @@
+.btn-primary{
+    background: yellowgreen;
+    border: yellowgreen;
+    margin-right: 5px;
+}
+.btn-primary:hover{
+    background: purple;
+    border: purple;
+}
+#mainjumbo{
+    background: linear-gradient(75deg, black, greenyellow);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#pagetitle{
+    color: white;
+}
+#pagesubtitle{
+    color: white;
+}
+.darkness{
+    background: #222222 !important;
+}
+li a:hover{
+    color: white;
+    border-bottom: greenyellow solid;
+}
+.box{
+    text-align: justify;
+}
+.icon{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5px;
+}
+.section-2{
+    background: indigo;
+    color: white;
+    text-align: center;
+}
+.f-icon{
+    width: 5%;
+}
+.actitle{
+    color: #222222;
+}
+.actitle:hover{
+    color: purple;
+    font-style: normal;
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    .container
+        .row
+            .col-8
+                .card
+                    .card-header
+                        strong About
+                    .card-body
+                        img.img-fluid.abimg(src="static/img/pug.svg")
+                        p.card-text
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at
+                            | consectetur odio. Pellentesque a orci hendrerit, posuere enim et, eleifend enim. In a massa
+                            | mattis, aliquet justo ut, rutrum odio. Ut at metus arcu. Praesent vel felis eget mi tempus
+                            | malesuada sit amet eget ipsum. Vivamus at mi sit amet urna faucibus feugiat. Maecenas velit
+                            | orci, efficitur sit amet risus sed, varius elementum enim. Nam sed neque sollicitudin,
+                            | facilisis augue eget, molestie elit. Nulla ultrices sit amet urna at dapibus. Sed tortor
+                            | orci, facilisis vitae ex quis, condimentum lobortis sem. Duis consectetur mi ut dapibus
+                            | fermentum. Integer ac nibh auctor nisi vestibulum consequat. Sed ac ex vitae elit placerat
+                            | congue.
+                            | Etiam eget efficitur ligula. Praesent euismod nulla diam, at aliquet velit mattis at. Cras
+                            | ut lacus sit amet urna tristique vestibulum vitae ac ex. Nam gravida quam ut turpis
+                            | ullamcorper bibendum. Pellentesque semper ornare lectus, sed dapibus risus. Cras quis massa
+                            | nec lectus fermentum laoreet. Proin ut dignissim nisi. Quisque viverra, nibh a finibus
+                            | hendrerit, libero lectus pharetra tortor, quis commodo ante nunc nec nunc.
+            .col-4
+                .card
+                    .card-body
+                        h5.card-title Who Am I
+                        blockquote.blockquote.mb-0
+                            iframe(src="https://www.youtube.com/embed/7ZWQRaY0Tns?rel=0&controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="")
+                            p Who Am I?
+                            a(href="https://www.youtube.com/watch?v=7ZWQRaY0Tns")
+                                footer.blockquote-footer
+                                    cite(title="Youtube")
+                                        | Peace Orchesta
+    br

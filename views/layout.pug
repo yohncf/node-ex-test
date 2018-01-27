@@ -1,0 +1,81 @@
+block variables
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous")
+        link(rel="stylesheet" type="text/css" href="static/stylesheets/style.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous")
+        script(async="" defer="" src="https://buttons.github.io/buttons.js")
+        title= title
+    body
+        #mainjumbo.jumbotron.jumbotron-fluid
+            // Navbar
+            .container-fluid.darkness.fixed-top
+                nav.container.navbar.navbar-expand-lg.navbar-dark.darkness
+                    a.navbar-brand(href="/")
+                        img(src="/static/img/ic_NjsET.png")
+                        | NjsET
+                    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                        span.navbar-toggler-icon
+                    #navbarSupportedContent.collapse.navbar-collapse
+                        ul.navbar-nav.ml-auto
+                            li.nav-item.active
+                                a.nav-link(href="/")
+                                    | Home
+                                    span.sr-only (current)
+                            li.nav-item
+                                a.nav-link(href="/about") About
+                            li.nav-item
+                                a.nav-link(href="/services") Services
+                            li.nav-item
+                                a.nav-link(href="/contact") Contact
+            // Jumbotron image and Buttons
+            .container
+                if jumbo
+                    h1#pagetitle.mt-5.display-2 NodeJs Experimentation Test
+                    p#pagesubtitle.lead This is a NodeJS webpage using express and Pug Template.
+                    p.mt-5.mb-0
+                        a.btn.btn-primary.btn-lg(href="/about") Read More
+                        a.btn.btn-light.btn-lg(href="/contact") Contact
+                else
+                    h1#pagetitle.mt-5.display-2.text-center #{title}
+        block content
+        .container-fluid.blockquote-footer.bg-dark
+            .container
+                .row.align-items-center
+                    .col-4
+                        h1 About this Page
+                        p This is a Node.js site using express and Pug. Based on
+                            a.badge.badge-pill.badge-dark(href="https://github.com/yohncf/bootstraptest" target="blank") BET
+                        a.github-button(href="https://github.com/yohncf" data-size="large" aria-label="Follow @yohncf on GitHub") Follow
+                    .col-8
+                        p.text-center
+                            | Created with:
+                            br
+                            br
+                            a(href="https://nodejs.org/en/" target="blank")
+                                img.f-icon(src="static/img/node.svg")
+                            | -
+                            a(href="https://expressjs.com/" target="blank")
+                                img.f-icon(src="static/img/express.png")
+                            | -
+                            a(href="https://pugjs.org/api/getting-started.html" target="blank")
+                                img.f-icon(src="static/img/puglogo.svg")
+                            | -
+                            a(href="https://www.javascript.com/" target="blank")
+                                img.f-icon(src="static/img/js.jpg")
+                            | -
+                            img.f-icon(src="static/img/HTML5_logo.png")
+                            | -
+                            a(href="http://getbootstrap.com/" target="blank")
+                                img.f-icon(src="static/img/bootstrap-solid.svg")
+                            |  (v4.0.0-beta.3)
+                            | and
+                            a(href="https://www.jetbrains.com/webstorm/" target="blank")
+                            img.f-icon(src="static/img/webstorm.png")
+            .container
+                p.text-center.text-nowrap Copyright ©2018, yohncf All rights reserved.
+            br

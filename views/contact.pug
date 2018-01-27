@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    .container
+        .row
+            // Contact Form
+            .col-8.card
+                h5.card-title Contact Me
+                p Please fill this form to contact me
+                form.m-3
+                    .form-group
+                        label(for="Name")
+                        input#name.form-control(type="text" aria-describedby="nameHelp" placeholder="Enter name")
+                        small#nameHelp.form-text.text-muted Full name
+                    .form-group
+                        label(for="Email")
+                        input#Email.form-control(type="email" aria-describedby="emailHelp" placeholder="Enter email")
+                        small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                    .form-group
+                        label(for="Message")
+                        textarea#Message.form-control(type="text" aria-describedby="messageHelp" placeholder="Enter message")
+                        small#messageHelp.form-text.text-muted Write your message, I'll read it as soon as I get it.
+                    .form-check
+                        input#exampleCheck1.form-check-input(type="checkbox")
+                        label.form-check-label(for="exampleCheck1") Are you sure you want to contact me?
+                    br
+                    button.btn.btn-primary(type="submit") Submit
+            // Info Who am I Card
+            .col-4
+                .card
+                    .card-body
+                        h5.card-title Who Am I
+                        blockquote.blockquote.mb-0
+                            iframe(src="https://www.youtube.com/embed/7ZWQRaY0Tns?rel=0&controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="")
+                            p Who Am I?
+                            a(href="https://www.youtube.com/watch?v=7ZWQRaY0Tns")
+                                footer.blockquote-footer
+                                    cite(title="Youtube")
+                                        | Peace Orchesta
+    .container-fluid(style="height: 50px")
+    br
